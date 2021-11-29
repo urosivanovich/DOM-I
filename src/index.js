@@ -40,3 +40,31 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+
+const nav = document.querySelector('nav');
+
+const firstChild = nav.firstChild;
+firstChild.textContent = siteContent['nav']['nav-item-1'];
+
+const secondChild = firstChild.nextElementSibling;
+secondChild.textContent = siteContent['nav']['nav-item-2'];
+
+const thirdChild = secondChild.nextElementSibling;
+thirdChild.textContent = siteContent['nav']['nav-item-3'];
+
+const fourthChild = thirdChild.nextElementSibling;
+fourthChild.textContent = siteContent['nav']['nav-item-4'];
+
+const fifthChild = fourthChild.nextElementSibling;
+fifthChild.textContent = siteContent['nav']['nav-item-5'];
+
+const sixtChild = fifthChild.nextElementSibling;
+sixtChild.textContent = siteContent['nav']['nav-item-6'];
+
+
+
+
+
+
+
