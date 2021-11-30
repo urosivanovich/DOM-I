@@ -40,3 +40,75 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+
+const nav = document.querySelector('nav');
+
+const firstChild = nav.firstChild;
+firstChild.textContent = siteContent['nav']['nav-item-1'];
+
+const secondChild = firstChild.nextElementSibling;
+secondChild.textContent = siteContent['nav']['nav-item-2'];
+
+const thirdChild = secondChild.nextElementSibling;
+thirdChild.textContent = siteContent['nav']['nav-item-3'];
+
+const fourthChild = thirdChild.nextElementSibling;
+fourthChild.textContent = siteContent['nav']['nav-item-4'];
+
+const fifthChild = fourthChild.nextElementSibling;
+fifthChild.textContent = siteContent['nav']['nav-item-5'];
+
+const sixthChild = fifthChild.nextElementSibling;
+sixthChild.textContent = siteContent['nav']['nav-item-6'];
+
+const logoImg = document.querySelector('#logo-img');
+logoImg.src = siteContent.images['logo-img'];
+
+const domIsAwesome = document.querySelector('.cta-text h1');
+domIsAwesome.textContent = siteContent.cta.h1;
+
+const button = document.querySelector('button');
+button.textContent = siteContent.cta.button;
+
+const bigImg = document.querySelector('#cta-img');
+bigImg.src = "http://localhost:9000/img/cta.png";
+
+const midImg = document.querySelector('#middle-img');
+midImg.src = "http://localhost:9000/img/accent.png";
+
+const topContent = document.querySelector('.top-content');
+topContent.children[0].children[0].textContent = siteContent['main-content']['features-h4'];
+topContent.children[0].children[1].textContent = siteContent['main-content']['features-content'];
+topContent.children[1].children[0].textContent = siteContent['main-content']['about-h4'];
+topContent.children[1].children[1].textContent = siteContent['main-content']['about-content'];
+
+const bottomContent = document.querySelector('.bottom-content');
+const h4sBottom = bottomContent.querySelectorAll('h4');
+
+h4sBottom[0].textContent = siteContent['main-content']['services-h4'];
+h4sBottom[1].textContent = siteContent['main-content']['product-h4'];
+h4sBottom[2].textContent = siteContent['main-content']['vision-h4'];
+
+const psBottom = bottomContent.querySelectorAll('p')
+psBottom[0].textContent = siteContent['main-content']['services-content'];
+psBottom[1].textContent = siteContent['main-content']['product-content'];
+psBottom[2].textContent = siteContent['main-content']['vision-content'];
+
+
+
+const footerLink = document.querySelector('footer a');
+footerLink.textContent = siteContent.footer.copyright;
+footerLink.classList.add('bold');
+
+
+const contact = document.querySelector('section.contact')
+
+contact.querySelector('h4').textContent = siteContent.contact['contact-h4']
+contact.children[1].textContent = siteContent.contact['address']
+contact.querySelector('p:nth-of-type(2)').textContent = siteContent.contact['phone']
+contact.children[3].textContent = siteContent.contact['email']
+
+
+
+
